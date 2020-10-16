@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bulma UI Design</title>
+    <!-- Bulma -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css"
+    />
+    <!-- Fonts Awesome -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.14.0/js/all.js"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <!-- nav-left -->
+      <nav class="navbar has-shadow is-primary">
+        <div class="container">
+          <div class="navbar-brand">
+            <a class="navbar-item">
+              <img
+                src="assets/images/logo.jpg"
+                alt=""
+                style="max-height: 5rem"
+              />
+            </a>
+            <a class="navbar-burger" id="burger">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+          </div>
+          <!-- nav-right -->
+          <div class="navbar-menu" id="nav-links">
+            <div class="navbar-end">
+              <a
+                class="navbar-item"
+                href="https://twitter.com/BoJackHorseman"
+                target="_blank"
+                >Follow Me!</a
+              >
+              <a class="navbar-item">Shopping Cart(0)</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- breadcrumbs -->
+      <div class="section pt-4 pb-0">
+        <nav class="breadcrumb has-arrow-separator">
+          <ul class="container is-size-6">
+            <li><a class="has-text-grey">Home</a></li>
+            <li><a class="has-text-grey">Shop</a></li>
+            <li class="is-active"><a>Lame Songs</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- product-info -->
+      <section class="section">
+        <div class="container">
+          <div class="columns is-vcentered is-multiline">
+            <div class="column is-6-tablet is-3-desktop">
+              <h1 class="title is-size-1-desktop">Test</h1>
+              <h2 class="subtitle is-size-2-desktop">Test</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque,
+                corrupti quibusdam cumque quae suscipit ad consectetur
+                exercitationem magni aperiam alias.
+              </p>
+            </div>
+            <div class="column is-6-tablet is-5-desktop has-text-centered">
+              <img src="assets/images/music-album.jpg" class="px-6" alt="" />
+            </div>
+            <div class="column is-4-desktop">
+              <h1 class="title is-size-5 mb-4">$50.00</h1>
+              <h2 class="subtitle is-size-5">Test</h2>
+              <p class="mb-4">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit
+              </p>
+              <form>
+                <div class="field">
+                  <div class="control mb-6">
+                    <div class="select is-dark">
+                      <select>
+                        <option>Small</option>
+                        <option>Medium</option>
+                        <option>Large</option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <button class="is-warning button">Add to cart</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- tabbed content & message section -->
+      <section class="section">
+        <div class="container">
+          <div class="columns is-8 is-variable">
+            <div class="column is-7">
+              <!-- tabs -->
+              <div class="tabs is-boxed is-left">
+                <ul>
+                  <li class="is-active" data-target="product-details">
+                    <a>Product Info</a>
+                  </li>
+                  <li data-target="delivery-info">
+                    <a>Delivery Info</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="px-2" id="tab-content">
+                <div class="" id="product-details">
+                  <h3 class="is-size-5 title">Product details</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quo, odit! Neque porro eius quia quidem, dolorum quas est
+                    nihil eligendi distinctio? Optio voluptate perferendis ex
+                    iste eius officiis quis tempora.
+                  </p>
+                </div>
+                <div class="is-hidden" id="delivery-info">
+                  <h3 class="is-size-5 title">Delivery info</h3>
+                  <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    Quo, odit! Neque porro eius quia quidem, dolorum quas est
+                    nihil eligendi distinctio? Optio voluptate perferendis ex
+                    iste eius officiis quis tempora.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- message -->
+            <div class="column is-5-tablet">
+              <div class="message is-primary">
+                <div class="message-header">
+                  <p>Earn points with the coffee club</p>
+                </div>
+                <div class="message-body">
+                  <p>
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Quos voluptas voluptates assumenda, ratione quis officia
+                    quibusdam. Autem pariatur qui ratione maiores dolores,
+                    necessitatibus ullam eveniet repellendus praesentium quia
+                    placeat veniam!
+                  </p>
+                  <div class="has-text-centered">
+                    <button class="button mt-2" id="signup">Sign Up</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- related products cards -->
+
+      <section class="section">
+        <div class="container">
+          <h3 class="title has-text-centered is-size-4">Related Products</h3>
+          <div class="columns mt-5 is-8 is-variable">
+            <!-- cards -->
+            <!-- card-1 -->
+            <div class="column is-4-tablet is-3-desktop">
+              <div class="card">
+                <div class="card-image has-text-centered px-6">
+                  <img src="assets/images/related-products-1.jpg" alt="" />
+                </div>
+                <div class="card-content">
+                  <p>$100</p>
+                  <p class="title is-size-5">Test</p>
+                </div>
+                <div class="card-footer">
+                  <p class="card-footer-item">
+                    <a href="" class="has-text-grey">View</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card-2 -->
+
+            <div class="column is-4-tablet is-3-desktop">
+              <div class="card">
+                <div class="card-image has-text-centered px-6">
+                  <img src="assets/images/related-products-1.jpg" alt="" />
+                </div>
+                <div class="card-content">
+                  <p>$100</p>
+                  <p class="title is-size-5">Test</p>
+                </div>
+                <div class="card-footer">
+                  <p class="card-footer-item">
+                    <a href="" class="has-text-grey">View</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 3 -->
+
+            <div class="column is-4-tablet is-3-desktop">
+              <div class="card">
+                <div class="card-image has-text-centered px-6">
+                  <img src="assets/images/related-products-1.jpg" alt="" />
+                </div>
+                <div class="card-content">
+                  <p>$100</p>
+                  <p class="title is-size-5">Test</p>
+                </div>
+                <div class="card-footer">
+                  <p class="card-footer-item">
+                    <a href="" class="has-text-grey">View</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!-- card 4 -->
+            <div class="column is-4-tablet is-3-desktop">
+              <div class="card">
+                <div class="card-image has-text-centered px-6">
+                  <img src="assets/images/related-products-1.jpg" alt="" />
+                </div>
+                <div class="card-content">
+                  <p>$100</p>
+                  <p class="title is-size-5">Test</p>
+                </div>
+                <div class="card-footer">
+                  <p class="card-footer-item">
+                    <a href="" class="has-text-grey">View</a>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <!-- cards end -->
+          </div>
+        </div>
+      </section>
+
+      <!-- modal -->
+
+      <div class="modal">
+        <div class="modal-background"></div>
+        <div class="modal-content has-background-white py-5 px-5">
+          <h3 class="title mb-6">Join the Club</h3>
+          <form>
+            <div class="field"><label class="label">Name</label></div>
+            <div class="control">
+              <input class="input" placeholder="Name" />
+            </div>
+            <div class="field"><label class="label">Email</label></div>
+            <div class="control">
+              <input class="input" placeholder="Email" />
+            </div>
+            <div class="field">
+              <div class="control">
+                <label class="checkbox mt-3">
+                  <input type="checkbox" />
+                  I agree
+                </label>
+              </div>
+            </div>
+            <div class="mt-6 has-text-centered">
+              <button class="button is-warning">Sign up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="content has-text-centered">
+        <p>Copyright BoHo!</p>
+      </div>
+    </footer>
+    <script src="/index.js"></script>
+  </body>
+</html>
